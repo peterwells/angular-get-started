@@ -3,8 +3,9 @@
 <div *ngFor="let product of products; index as productId">
     <h3>
         <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
-            {{ product.name }}
+            {{ product.name }} <i class="material-icons">description</i>
         </a>
+        
     </h3>
 
     <p *ngIf="product.description">
